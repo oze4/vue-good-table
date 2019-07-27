@@ -74,7 +74,7 @@ export default {
           type: 'number',
           filterOptions: {
             enabled: true,
-            // filterValue: 20,
+            filterValue: '',//20,
           },
         },
         {
@@ -239,13 +239,15 @@ export default {
       console.log(params);
     },
     setFilter() {
-      // this.columns[0].filterOptions.filterValue = 'John';
+      this.columns[1].filterOptions.filterValue = 16;
+      /*
       const column1 = JSON.parse(JSON.stringify(this.columns[0]));
       column1.filterOptions.filterValue = 'John';
       this.$set(this.columns, 0, column1);
       const column2 = JSON.parse(JSON.stringify(this.columns[1]));
       column2.filterOptions.filterValue = 20;
       this.$set(this.columns, 1, column2);
+      */
       // this.$set(this.columns[1], 'filterOptions', { enabled: true, filterValue: 20 });
       // this.$set(this.columns[0], 'filterOptions', {
       //   enabled: true,

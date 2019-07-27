@@ -62,9 +62,9 @@ export default {
   watch: {
     columns: {
       handler(newValue, oldValue) {
-        if (!isEqual(newValue, oldValue)) {
+        //if (!isEqual(newValue, oldValue)) {
           this.populateInitialFilters();
-        }
+        //}
       },
       deep: true,
       immediate: true,
